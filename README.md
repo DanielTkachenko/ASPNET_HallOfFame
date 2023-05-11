@@ -14,12 +14,14 @@
 Основные сущности
 Система должна оперировать следующими сущностями:
 Person (Сотрудник):
+
 {
   id: long,
   name: string,
   displayName: string,
   skills: [Skill, Skill, Skill, …]
 }
+
 Skill (Навык)
 {
   name: string,
