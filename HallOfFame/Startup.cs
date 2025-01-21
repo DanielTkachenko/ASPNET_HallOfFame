@@ -29,7 +29,7 @@ namespace HallOfFame
         public void ConfigureServices(IServiceCollection services)
         {
             string connection = Configuration.GetConnectionString("DefaultConnection");
-            // добавляем контекст CompetenciesContext в качестве сервиса в приложение
+            
             services.AddDbContext<CompetenciesContext>(options => options.UseLazyLoadingProxies().UseSqlServer(connection));
             services.AddControllers();
 
